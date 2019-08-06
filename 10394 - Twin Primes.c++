@@ -2,7 +2,7 @@
 
 using namespace std;
 typedef long long ll;
-const int N=2e7+5,M=1e8+5,OO=0x3f3f3f3f;
+const int N=2e7+5,M=1e5+5,OO=0x3f3f3f3f;
 int s;
 vector<int>v;
 vector<pair<int,int> >vii;
