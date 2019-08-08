@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+typedef long long ll;
+const int N=1e6+5,M=1e8+5,OO=0x3f3f3f3f;
+int n;
+vector<int>v;
+int numDiffPF[N];
+void sieve()
+{
+    for(int i=2; i<=N; i++)
+        if(!numDiffPF[i])for(int j=i; j<=N; j+=i)numDiffPF[j]++;
+}
+
+int main()
+{
+    //freopen("i.txt", "r", stdin);
+    //freopen("o.txt", "w", stdout);
+
+    sieve();
+    while(scanf("%d",&n)==1&&n)
+    {
+        printf("%d : %d\n",n,numDiffPF[n]);
+    }
+    return 0;
+}
