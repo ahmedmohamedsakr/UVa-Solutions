@@ -5,7 +5,7 @@ const int N=3e2+5,M=1e6+5,OO=0x3f3f3f3f;
 int a,b,v;
 vi adj[N];
 
-bool checkBiPartite(int src)
+bool checkBiPartite(int src=1)
 {
     queue<int>q;
     vi color(N,OO);
@@ -40,7 +40,7 @@ int main ()
             adj[a].push_back(b);
             adj[b].push_back(a);
         }
-        puts(checkBiPartite(1)?"YES":"NO");
+        puts(checkBiPartite()?"YES":"NO");
     }
     return 0;
 }
