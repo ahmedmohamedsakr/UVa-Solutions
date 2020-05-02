@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int N=1e4+5,M=1e6+5,OO=0x3f3f3f3f;
+const int N=1e4+5,M=1e5+5,OO=0x3f3f3f3f;
 int n,u,v,id,m,outEdgeCount;
 int vis[N],ids[N],low[N],artsPoint[N];
 vector<int>adj[N];
